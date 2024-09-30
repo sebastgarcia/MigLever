@@ -4015,11 +4015,11 @@ figcaption {
 }
 
 .dropdown-column-wrapper {
-  width: 650px;
+  width: 350px;
   background-color: rgba(0, 0, 0, 0);
   padding-top: 15px;
   overflow: hidden;
-  transform: translate(-50%);
+  transform: translate3d(0%, 0px, 0px)!important;
 }
 
 .dropdown-column-wrapper.v2 {
@@ -6027,6 +6027,12 @@ figcaption {
   right: -20px;
 }
 
+.show-only-on-ham-menu{
+  display: none;
+ }  
+
+
+
 @media screen and (min-width: 1440px) {
   .grid-2-columns.style---styleguide-wrapper {
     grid-template-columns: .3fr 1fr;
@@ -6193,6 +6199,18 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
+ 
+  .header-nav-link{
+    text-align: left;
+  }
+  .show-only-on-ham-menu{
+  display: block;
+  margin: 0;
+ }  
+  .show-only-on-desktop{
+    display: none;
+  }
+
   h1 {
     font-size: 48px;
   }
