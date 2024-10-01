@@ -1569,6 +1569,11 @@ figcaption {
   grid-row-gap: 32px;
 }
 
+.grid-2-columns.form.mig {
+  grid-column-gap: 48px;
+  grid-row-gap: 40px;
+}
+
 .grid-2-columns.contact-v1 {
   grid-column-gap: 40px;
   grid-template-columns: .75fr 1.2fr;
@@ -3787,6 +3792,11 @@ figcaption {
   padding-top: 64px;
 }
 
+.section.pd-top-64px---bottom-64px {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .section.pd-top-120px {
   padding-top: 120px;
 }
@@ -5510,6 +5520,12 @@ figcaption {
   line-height: 1em;
   display: flex;
 }
+
+.input-dropdown-toggle.mig {
+
+  padding: 16px 24px;
+}
+
 
 .input-dropdown-toggle.hero-form.text-200 {
   z-index: 1;
@@ -7245,6 +7261,9 @@ figcaption {
 
 @media screen and (max-width: 767px) {
   body {
+    font-size: 16px;
+  }
+  .checkbox-field-wrapper{
     font-size: 16px;
   }
 
