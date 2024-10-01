@@ -6056,7 +6056,7 @@ figcaption {
   font-size: .875rem;
   border-radius: 8px;
   top: 50%;
-  left: 5%;
+  left: 20px;
   opacity: 0;
   transition: opacity .3s ease-in-out;
   background-color: var(--neutral--200);
