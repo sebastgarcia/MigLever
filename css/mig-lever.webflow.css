@@ -6048,6 +6048,32 @@ figcaption {
  }  
 
 
+ tool-tip{
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 10px #000;
+  padding: 8px 12px;
+  font-size: .875rem;
+  border-radius: 8px;
+  top: 50%;
+  left: 5%;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  background-color: var(--neutral--200);
+  width: 390px;
+}
+
+
+.tool-tip-img{
+  width: fit-content;
+}
+
+.tool-tip-img:hover + tool-tip{
+  opacity: 1;
+}
+
+
+
 
 @media screen and (min-width: 1440px) {
   .grid-2-columns.style---styleguide-wrapper {
@@ -7296,6 +7322,11 @@ figcaption {
     border-radius: 18px;
     padding: 64px 32px;
     font-size: 18px;
+  }
+
+  tool-tip{
+
+    width: 300px;
   }
 
   .grid-2-columns {
@@ -8577,6 +8608,11 @@ figcaption {
 }
 
 @media screen and (max-width: 479px) {
+
+  tool-tip{
+
+    width: 250px;
+  }
 
   .header-logo {
     width: 87px;
@@ -10053,6 +10089,8 @@ figcaption {
   #w-node-e3a90f75-d470-7097-bbbe-55a933809da3-11f950c0, #w-node-_4d23d9c3-32aa-001b-0596-e5a65931aef9-11f950c0, #w-node-_5d0cf41d-1172-6000-505c-5abc2306569e-11f950c0, #w-node-ae36a11d-9aa6-9b99-1c4e-812c3ccf1b6f-11f950c0, #w-node-_529f5180-557e-0011-a8c7-d413bd690ec5-11f950c0, #w-node-_529f5180-557e-0011-a8c7-d413bd690ed0-11f950c0, #w-node-_529f5180-557e-0011-a8c7-d413bd690edb-11f950c0, #w-node-_529f5180-557e-0011-a8c7-d413bd690ee6-11f950c0, #w-node-_3e7a3750-203b-4f65-b2ff-7193010c307e-11f950c0, #w-node-_820331d6-c4e7-e22c-17e6-307c4ba0cf79-11f950c0, #w-node-_2cc935a5-ba4b-b138-1cd0-3ca62c07d263-11f950c0, #w-node-_2cc935a5-ba4b-b138-1cd0-3ca62c07d26e-11f950c0, #w-node-_2cc935a5-ba4b-b138-1cd0-3ca62c07d279-11f950c0, #w-node-cd97ed09-7ee7-f868-9f24-92008cbffbf9-11f950c0, #w-node-_678fa4ae-1fca-b02f-fd27-9efe550463d6-11f950c0, #w-node-_053b3848-5278-b0d0-565f-4e26607311a1-11f950c0, #w-node-_8638ecc7-fc7a-8770-ed2b-943d852abcf3-11f950c0, #w-node-d7e62f01-1c68-6af4-0f0b-aa76e3a3f0a9-11f950c0, #w-node-d7e62f01-1c68-6af4-0f0b-aa76e3a3f0bd-11f950c0, #w-node-fdedfdaf-07eb-26ce-ec5a-44f9429fbce6-11f950c0, #w-node-e5098d5c-99e5-a310-1707-51b579e0852f-11f950c0, #w-node-_1d39ea8e-bae3-1512-4ef0-cdf93fc0f8da-11f950c0, #w-node-_0959ac05-e5ad-fd43-8e7e-a09dd2f57df9-11f950c0, #w-node-d7e62f01-1c68-6af4-0f0b-aa76e3a3f0d1-11f950c0, #w-node-f9a626ae-4f05-7075-0d66-3072978dbb53-11f950c0, #w-node-_5e353be1-d012-39fc-eeb8-2763382b8e35-11f950c0 {
     order: -9999;
   }
+
+
 }
 
 @media screen and (max-width: 479px) {
@@ -10317,8 +10355,15 @@ a.contact-link {
     'text-right text-right';
   }
 
+ 
+
 }
 
 
+@media screen and (max-width: 400px) {
 
+  tool-tip{
 
+    width: 150px;
+  }
+}
